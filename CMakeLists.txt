@@ -131,3 +131,11 @@ if (DOXYGEN_FOUND)
         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doc
         COMMENT "Generating Doxygen documentation" VERBATIM)
 endif()
+
+
+INSTALL(
+  TARGETS QEx
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  COMPONENT library
+)
